@@ -37,7 +37,6 @@ The model’s performance is evaluated using Mean Squared Error (MSE), providing
 * Step 8: Convert the test data into a TensorFlow dataset.<br>
 * Step 9: Use the trained model to predict house prices on the test dataset.<br>
 * Step 10: Create a submission DataFrame with the 'Id' and predicted 'SalePrice' values and save it to a CSV file.<br>
-* Step 11: Display the first few rows of the submission DataFrame.<br>
 <br>
 Acknowledgments: Dataset, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
-                 Kaggle competition.
+                 submit for Kaggle competition.
