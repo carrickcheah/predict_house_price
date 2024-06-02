@@ -2,7 +2,7 @@
 Using Decision Forests to predict housing prices helps in accurately estimating property values, aiding people in making informed decisions based on comprehensive data analysis.<br>
 <br>
 Libaries: TensorFlow, Matplotlib, Seaborn<br>
-Dataset: Acknowledgments, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
+
 
 <br>
 * Step 1: Import the necessary libraries.<br>
@@ -16,3 +16,4 @@ Dataset: Acknowledgments, The Ames Housing dataset was compiled by Dean De Cock 
 * Step 9: Use the trained model to predict house prices on the test dataset.<br>
 * Step 10: Create a submission DataFrame with the 'Id' and predicted 'SalePrice' values and save it to a CSV file.<br>
 * Step 11: Display the first few rows of the submission DataFrame.<br>
+Acknowledgments, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
