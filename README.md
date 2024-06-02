@@ -40,3 +40,4 @@ The model’s performance is evaluated using Mean Squared Error (MSE), providing
 * Step 11: Display the first few rows of the submission DataFrame.<br>
 <br>
 Acknowledgments: Dataset, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
+                 Kaggle competition.
