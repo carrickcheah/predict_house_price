@@ -1,8 +1,8 @@
-##Predict housing price with Decision forest<br>
+## Predict housing price with Decision forest<br>
 
 
-*Step 1: Import the necessary libraries.<br>
-*Step 2: Load the training data from the specified file path.<br>
+* Step 1: Import the necessary libraries.<br>
+* Step 2: Load the training data from the specified file path.<br>
 *Step 3: Preprocess the data by dropping rows with missing values and separating the label (SalePrice).<br>
 *Step 4: Convert the preprocessed pandas DataFrame into a TensorFlow dataset suitable for training.<br>
 *Step 5: Initialize and compile a RandomForest model for regression.<br>
