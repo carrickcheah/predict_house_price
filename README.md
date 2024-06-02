@@ -3,6 +3,7 @@ Using Decision Forests to predict housing prices helps in accurately estimating 
 <br>
 Libaries: TensorFlow, Matplotlib, Seaborn<br>
 
+![image](https://github.com/carrickcheah/predict_house_price/assets/138642124/1f1820f5-722a-4db5-9880-d2f474529738)
 
 <br>
 * Step 1: Import the necessary libraries.<br>
