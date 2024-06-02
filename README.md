@@ -1,19 +1,19 @@
 ## Predict housing price with Decision Forest<br>
 Using Decision Forests to predict housing prices helps in accurately estimating property values, aiding people in making informed decisions based on comprehensive data analysis.<br>
 <br>
-Abstract
+Abstract<br>
 Using TensorFlow Decision Forests, we predict housing prices by training a Random Forest model on a dataset. This process involves data preprocessing, model training, and evaluation.
 <br>
-Introduction
+Introduction<br>
 This notebook demonstrates the use of TensorFlow Decision Forests to predict housing prices, showcasing the entire workflow from data preprocessing to model evaluation.
 <br>
-Libraries Used
+Libraries Used<br>
 We utilize several libraries including TensorFlow, TensorFlow Decision Forests, pandas, NumPy, seaborn, and matplotlib for data handling, model training, and visualization.
 <br>
-Role of Decision Forests
+Role of Decision Forests<br>
 TensorFlow Decision Forests plays a crucial role by providing a robust Random Forest model, which is trained on housing data to predict sale prices.
 <br>
-Performance Metrics
+Performance Metrics<br>
 The model’s performance is evaluated using Mean Squared Error (MSE), providing insights into the accuracy and reliability of the predictions. The model achieved an MSE of 1173813248.0000 on the validation set.
 <br>
 
