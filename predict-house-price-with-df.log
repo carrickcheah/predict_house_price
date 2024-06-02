@@ -1,0 +1,190 @@
+5.5s 1 /kaggle/input/house-prices-advanced-regression-techniques/sample_submission.csv
+5.5s 2 /kaggle/input/house-prices-advanced-regression-techniques/data_description.txt
+5.5s 3 /kaggle/input/house-prices-advanced-regression-techniques/train.csv
+5.5s 4 /kaggle/input/house-prices-advanced-regression-techniques/test.csv
+8.1s 5 2024-06-02 12:13:15.818925: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+8.1s 6 2024-06-02 12:13:15.819056: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+8.1s 7 2024-06-02 12:13:15.963666: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+8.3s 8 2024-06-02 12:13:15.818925: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+8.3s 9 2024-06-02 12:13:15.819056: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+8.3s 10 2024-06-02 12:13:15.963666: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+20.3s 11 TensorFlow version: 2.15.0
+20.3s 12 TensorFlow Decision Forests version: 1.8.1
+20.3s 13 Initial dataset shape: (1460, 81)
+20.4s 14 Dataset shape after dropping 'Id': (1460, 80)
+20.4s 15 <class 'pandas.core.frame.DataFrame'>
+20.4s 16 RangeIndex: 1460 entries, 0 to 1459
+20.4s 17 Data columns (total 80 columns):
+20.4s 18 #   Column         Non-Null Count  Dtype
+20.4s 19 ---  ------         --------------  -----
+20.4s 20 0   MSSubClass     1460 non-null   int64
+20.4s 21 1   MSZoning       1460 non-null   object
+20.4s 22 2   LotFrontage    1201 non-null   float64
+20.4s 23 3   LotArea        1460 non-null   int64
+20.4s 24 4   Street         1460 non-null   object
+20.4s 25 5   Alley          91 non-null     object
+20.4s 26 6   LotShape       1460 non-null   object
+20.4s 27 7   LandContour    1460 non-null   object
+20.4s 28 8   Utilities      1460 non-null   object
+20.4s 29 9   LotConfig      1460 non-null   object
+20.4s 30 10  LandSlope      1460 non-null   object
+20.4s 31 11  Neighborhood   1460 non-null   object
+20.4s 32 12  Condition1     1460 non-null   object
+20.4s 33 13  Condition2     1460 non-null   object
+20.4s 34 14  BldgType       1460 non-null   object
+20.4s 35 15  HouseStyle     1460 non-null   object
+20.4s 36 16  OverallQual    1460 non-null   int64
+20.4s 37 17  OverallCond    1460 non-null   int64
+20.4s 38 18  YearBuilt      1460 non-null   int64
+20.4s 39 19  YearRemodAdd   1460 non-null   int64
+20.4s 40 20  RoofStyle      1460 non-null   object
+20.4s 41 21  RoofMatl       1460 non-null   object
+20.4s 42 22  Exterior1st    1460 non-null   object
+20.4s 43 23  Exterior2nd    1460 non-null   object
+20.4s 44 24  MasVnrType     588 non-null    object
+20.4s 45 25  MasVnrArea     1452 non-null   float64
+20.4s 46 26  ExterQual      1460 non-null   object
+20.4s 47 27  ExterCond      1460 non-null   object
+20.4s 48 28  Foundation     1460 non-null   object
+20.4s 49 29  BsmtQual       1423 non-null   object
+20.4s 50 30  BsmtCond       1423 non-null   object
+20.4s 51 31  BsmtExposure   1422 non-null   object
+20.4s 52 32  BsmtFinType1   1423 non-null   object
+20.4s 53 33  BsmtFinSF1     1460 non-null   int64
+20.4s 54 34  BsmtFinType2   1422 non-null   object
+20.4s 55 35  BsmtFinSF2     1460 non-null   int64
+20.4s 56 36  BsmtUnfSF      1460 non-null   int64
+20.4s 57 37  TotalBsmtSF    1460 non-null   int64
+20.4s 58 38  Heating        1460 non-null   object
+20.4s 59 39  HeatingQC      1460 non-null   object
+20.4s 60 40  CentralAir     1460 non-null   object
+20.4s 61 41  Electrical     1459 non-null   object
+20.4s 62 42  1stFlrSF       1460 non-null   int64
+20.4s 63 43  2ndFlrSF       1460 non-null   int64
+20.4s 64 44  LowQualFinSF   1460 non-null   int64
+20.4s 65 45  GrLivArea      1460 non-null   int64
+20.4s 66 46  BsmtFullBath   1460 non-null   int64
+20.4s 67 47  BsmtHalfBath   1460 non-null   int64
+20.4s 68 48  FullBath       1460 non-null   int64
+20.4s 69 49  HalfBath       1460 non-null   int64
+20.4s 70 50  BedroomAbvGr   1460 non-null   int64
+20.4s 71 51  KitchenAbvGr   1460 non-null   int64
+20.4s 72 52  KitchenQual    1460 non-null   object
+20.4s 73 53  TotRmsAbvGrd   1460 non-null   int64
+20.4s 74 54  Functional     1460 non-null   object
+20.4s 75 55  Fireplaces     1460 non-null   int64
+20.4s 76 56  FireplaceQu    770 non-null    object
+20.4s 77 57  GarageType     1379 non-null   object
+20.4s 78 58  GarageYrBlt    1379 non-null   float64
+20.4s 79 59  GarageFinish   1379 non-null   object
+20.4s 80 60  GarageCars     1460 non-null   int64
+20.4s 81 61  GarageArea     1460 non-null   int64
+20.4s 82 62  GarageQual     1379 non-null   object
+20.4s 83 63  GarageCond     1379 non-null   object
+20.4s 84 64  PavedDrive     1460 non-null   object
+20.4s 85 65  WoodDeckSF     1460 non-null   int64
+20.4s 86 66  OpenPorchSF    1460 non-null   int64
+20.4s 87 67  EnclosedPorch  1460 non-null   int64
+20.4s 88 68  3SsnPorch      1460 non-null   int64
+20.4s 89 69  ScreenPorch    1460 non-null   int64
+20.4s 90 70  PoolArea       1460 non-null   int64
+20.4s 91 71  PoolQC         7 non-null      object
+20.4s 92 72  Fence          281 non-null    object
+20.4s 93 73  MiscFeature    54 non-null     object
+20.4s 94 74  MiscVal        1460 non-null   int64
+20.4s 95 75  MoSold         1460 non-null   int64
+20.4s 96 76  YrSold         1460 non-null   int64
+20.4s 97 77  SaleType       1460 non-null   object
+20.4s 98 78  SaleCondition  1460 non-null   object
+20.4s 99 79  SalePrice      1460 non-null   int64
+20.4s 100 dtypes: float64(3), int64(34), object(43)
+20.4s 101 memory usage: 912.6+ KB
+20.4s 102 
+20.4s 103 SalePrice statistics:
+20.4s 104 count      1460.000000
+20.4s 105 mean     180921.195890
+20.4s 106 std       79442.502883
+20.4s 107 min       34900.000000
+20.4s 108 25%      129975.000000
+20.4s 109 50%      163000.000000
+20.4s 110 75%      214000.000000
+20.4s 111 max      755000.000000
+20.4s 112 Name: SalePrice, dtype: float64
+20.7s 113 /opt/conda/lib/python3.10/site-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+20.7s 114 with pd.option_context('mode.use_inf_as_na', True):
+29.3s 115 1055 examples in training, 405 examples in testing.
+29.7s 116 Use /tmp/tmpjcnv8keh as temporary training directory
+30.1s 117 Reading training dataset...
+36.1s 118 Training dataset read in 0:00:05.978170. Found 1055 examples.
+36.1s 119 Training model...
+37.7s 120 [INFO 24-06-02 12:13:45.8918 UTC kernel.cc:1233] Loading model from path /tmp/tmpjcnv8keh/model/ with prefix 4c33c3d3bb3447bf
+37.9s 121 [INFO 24-06-02 12:13:45.8918 UTC kernel.cc:1233] Loading model from path /tmp/tmpjcnv8keh/model/ with prefix 4c33c3d3bb3447bf
+38.1s 122 [INFO 24-06-02 12:13:46.2580 UTC decision_forest.cc:660] Model loaded with 300 root(s), 100384 node(s), and 73 input feature(s).
+38.1s 123 [INFO 24-06-02 12:13:46.2581 UTC abstract_model.cc:1344] Engine "RandomForestOptPred" built
+38.1s 124 [INFO 24-06-02 12:13:46.2581 UTC kernel.cc:1061] Use fast generic engine
+38.1s 125 Model trained in 0:00:02.056240
+38.1s 126 Compiling model...
+38.3s 127 [INFO 24-06-02 12:13:46.2580 UTC decision_forest.cc:660] Model loaded with 300 root(s), 100384 node(s), and 73 input feature(s).
+38.3s 128 [INFO 24-06-02 12:13:46.2581 UTC abstract_model.cc:1344] Engine "RandomForestOptPred" built
+38.3s 129 [INFO 24-06-02 12:13:46.2581 UTC kernel.cc:1061] Use fast generic engine
+44.9s 130 Model compiled.
+45.1s 131 
+45.1s 132 Model Evaluation:
+45.1s 133 Evaluation(num_examples=1055, accuracy=None, loss=None, rmse=29389.041163513928, ndcg=None, aucs=None, auuc=None, qini=None)
+50.9s 134 1/1 [==============================] - ETA: 0s - loss: 0.0000e+00 - mse: 1173813248.00001/1 [==============================] - 6s 6s/step - loss: 0.0000e+00 - mse: 1173813248.0000
+50.9s 135 
+50.9s 136 Validation Performance:
+50.9s 137 loss: 0.0000
+50.9s 138 mse: 1173813248.0000
+51.0s 139 
+51.0s 140 Available variable importances:
+51.0s 141 INV_MEAN_MIN_DEPTH
+51.0s 142 NUM_AS_ROOT
+51.0s 143 SUM_SCORE
+51.0s 144 NUM_NODES
+51.0s 145 
+51.0s 146 Variable importances for NUM_AS_ROOT:
+51.0s 147 "OverallQual" (1; #62): 108.0
+51.0s 148 "ExterQual" (4; #22): 68.0
+51.0s 149 "Neighborhood" (4; #59): 29.0
+51.0s 150 "GarageCars" (1; #32): 25.0
+51.0s 151 "GrLivArea" (1; #38): 17.0
+51.0s 152 "YearBuilt" (1; #76): 15.0
+51.0s 153 "BsmtQual" (4; #14): 11.0
+51.0s 154 "KitchenQual" (4; #44): 11.0
+51.0s 155 "TotalBsmtSF" (1; #73): 8.0
+51.0s 156 "1stFlrSF" (1; #0): 4.0
+51.0s 157 "GarageArea" (1; #31): 2.0
+51.0s 158 "Foundation" (4; #28): 1.0
+51.0s 159 "FullBath" (1; #29): 1.0
+52.4s 160 1/2 [==============>...............] - ETA: 0s2/2 [==============================] - 1s 23ms/step
+52.4s 161 
+52.4s 162 Sample submission:
+52.4s 163 Id      SalePrice
+52.4s 164 0  1461  122859.960938
+52.4s 165 1  1462  152393.359375
+52.4s 166 2  1463  176324.765625
+52.4s 167 3  1464  181994.859375
+52.4s 168 4  1465  196658.156250
+52.4s 169 
+52.4s 170 Final submission:
+52.4s 171 Id      SalePrice
+52.4s 172 0  1461  122859.960938
+52.4s 173 1  1462  152393.359375
+52.4s 174 2  1463  176324.765625
+52.4s 175 3  1464  181994.859375
+52.4s 176 4  1465  196658.156250
+57.0s 177 /opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+57.0s 178 warn(
+57.0s 179 [NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+57.0s 180 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+57.5s 181 [NbConvertApp] Writing 365579 bytes to __notebook__.ipynb
+59.2s 182 /opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+59.2s 183 warn(
+59.2s 184 [NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+59.2s 185 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+60.2s 186 [NbConvertApp] Support files will be in __results___files/
+60.2s 187 [NbConvertApp] Making directory __results___files
+60.2s 188 [NbConvertApp] Making directory __results___files
+60.2s 189 [NbConvertApp] Making directory __results___files
+60.2s 190 [NbConvertApp] Writing 321253 bytes to __results__.html
