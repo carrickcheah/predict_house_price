@@ -16,4 +16,5 @@ Libaries: TensorFlow, Matplotlib, Seaborn<br>
 * Step 9: Use the trained model to predict house prices on the test dataset.<br>
 * Step 10: Create a submission DataFrame with the 'Id' and predicted 'SalePrice' values and save it to a CSV file.<br>
 * Step 11: Display the first few rows of the submission DataFrame.<br>
-Acknowledgments, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
+<br>
+Acknowledgments: Dataset, The Ames Housing dataset was compiled by Dean De Cock for use in data science education.  <br>
